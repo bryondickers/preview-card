@@ -1,0 +1,123 @@
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg-color:hsl(217, 54%, 11%);
+    --card-bg-color:hsl(216, 50%, 16%);
+    --line-though-color:hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-bg-color);
+    font-size: 18px;
+}
+
+main{
+    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-inline-size: 300px;
+    inline-size: 80%;
+    background-color: var(--card-bg-color);
+    padding:25px;
+    border-radius: 15px;
+}
+.main-img{
+    inline-size: 100%;
+    block-size: auto;
+    border-radius: 10px;
+
+}
+.main-div:hover .overlay{
+    display: flex;
+    background-color: hsl(178, 100%, 50%,0.5);
+    
+}
+
+.main-div{
+    position: relative;
+    inline-size: 100%;
+    block-size: 100%;
+}
+
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    inline-size:100%;
+    block-size: 100%;
+    display:none;
+    background:var(--cyan);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1:hover,span:hover{
+    color: var(--cyan);
+}
+h1{
+    margin-block-start: 1em;
+    color: var(--white);
+    font-family: "outfit";
+    font-weight: bold;
+    font-size:larger;
+    
+}
+.content-p{
+    margin-block: 0;
+}
+p{
+    color: var(--soft-blue);
+    font-family: "outfit";
+    font-weight: medium;
+
+    font-size:medium;
+}
+.outer-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.inner-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+    align-items: center;
+}
+.inner-flex p{
+    font-family: "outfit";
+    font-weight: bold;
+}
+.p-cyan{
+    color: var(--cyan);
+}
+
+.line-through{
+    block-size: 2px;
+    background-color: var(--line-though-color);
+    border: none;
+    margin-block-end: 7px;
+}
+.avatar{
+    inline-size:30px;
+    block-size: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+.avatar-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:15px;
+}
+span{
+    color: var(--white);
+}

@@ -7,28 +7,29 @@
     --white:hsl(0, 0%, 100%);
 }
 body{
+    min-block-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--main-bg-color);
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 main{
     margin-block: 2rem;
     display: flex;
     flex-direction: column;
-    max-inline-size: 300px;
+    max-inline-size: 18.75rem;
     inline-size: 80%;
     background-color: var(--card-bg-color);
-    padding:25px;
-    border-radius: 15px;
+    padding:1.5625rem;
+    border-radius: 0.9rem;
 }
 .main-img{
     inline-size: 100%;
     block-size: auto;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 
 }
 .main-div:hover .overlay{
@@ -103,11 +104,11 @@ p{
     block-size: 2px;
     background-color: var(--line-though-color);
     border: none;
-    margin-block-end: 7px;
+    margin-block: 0.5rem;
 }
 .avatar{
-    inline-size:30px;
-    block-size: 30px;
+    inline-size:1.9rem;
+    block-size: 1.9rem;
     border-radius: 50%;
     border: 2px solid var(--white);
 }
@@ -116,7 +117,7 @@ p{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    gap:15px;
+    gap:1rem;
 }
 span{
     color: var(--white);
